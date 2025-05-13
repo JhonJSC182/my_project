@@ -1,6 +1,8 @@
 
 const NavBar = props => {
-    return <h1>Hello world</h1>
+    return <nav className="nav">
+        <a href="/" className="site-title">Site</a>
+    </nav>
 }
 
 export default NavBar
