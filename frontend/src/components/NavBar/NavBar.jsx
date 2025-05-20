@@ -1,14 +1,18 @@
-import './NavBar.css'
+import './NavBar.css';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/panda.png';
 
 const NavBar = props => {
     return (
-    <nav>
-        <a href="/" className="site-title">CDS</a>
+    <nav className='navbar'>
+        <Link to='/' className='logo-link'>
+            <img src={logo} alt="logo" className='logo'/>
+        </Link>
 
         <ul className='links'>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Contact</a></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/about'>Contact</Link></li>
+            {/* <li><a href="">Contact</a></li> */}
         </ul>
     </nav>
 
